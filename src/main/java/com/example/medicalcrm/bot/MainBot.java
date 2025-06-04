@@ -61,8 +61,8 @@ public class MainBot extends TelegramLongPollingBot {
 
             switch (role) {
                 case "DOCTOR" -> doctorCommandHandler.handle(update, this, applicationService);
-                case "SMM" -> smmCommandHandler.handle(update, this);
-                default -> patientCommandHandler.handle(update, this);
+                case "SMM" -> smmCommandHandler.handle(update, this, applicationService);
+                default -> patientCommandHandler.handle(update, this, applicationService);
             }
         }
     }

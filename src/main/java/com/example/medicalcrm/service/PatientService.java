@@ -35,4 +35,8 @@ public class PatientService {
         return patientRepository.save(patient);
     }
 
+    public Patient getByTelegramId(String tgId) {
+        return patientRepository.findByTgId(tgId).orElse(null);
+    }
+
 }

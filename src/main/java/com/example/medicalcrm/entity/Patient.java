@@ -19,6 +19,7 @@ public class Patient {
     private String email;
     private String vkId;
     private String tgId;
+    private String username;
     private String instaId;
     private String typeOfPayment;
 
